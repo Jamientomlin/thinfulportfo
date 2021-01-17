@@ -1,0 +1,93 @@
+/*style font */ 
+
+body, ul, li, h1, h2, a{
+   
+    font-family: Arial;
+}
+/*setting up header, fixed margin issues with border box. */
+
+header{
+    background-color:#feb614;
+    box-sizing: border-box;
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    margin-right: 30px;
+ }
+ /*text for header also rounded edges with radius */
+ header h1{color: white;
+border: 8px solid white;
+padding: 6px 12px;
+display: inline-block;
+border-radius: 20px;
+}
+/*text aligning h2 */
+h2{text-align: center;
+}
+p{margin-left 30px;}
+/*text-emphasis*/
+article h3{
+    text-emphasis: bold;
+}
+/*remove bullets from UL*/
+ul{
+  list-style-type: none;
+}
+/*fixing image issues*/
+.images{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 50%;
+}
+.images img{
+    max-width: 80%; 
+}
+
+/*creating box for contact */
+section.contact{background: #f4f4f4;
+padding: 60px 20px;
+color: #4b4b4b;
+}
+/* pseudo classes */
+/*bolding first line*/
+article p::first-line{
+    font-weight: bold;
+    font-size: .9em;
+a:link {
+  color: orange;
+}
+a:visited {
+  color: purple;
+}
+a:link:hover {
+  color: green;
+}
+a:visited:hover {
+  color: red;
+}
+
+    a:hover {
+    text-decoration: underline;
+}
+
+/*fix words being too close to the edge*/
+body {
+  margin: 25px;
+  display: flex;
+}
+
+@media (max-width: 1400px) {
+  body {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    margin: 0px;
+    flex-direction: column;
+  }
+}
